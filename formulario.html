@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formulario</title>
+		<link rel="stylesheet" href="estilo.css" 
+	</head>
+	<body>
+		<center>
+			<img src="imagenes/encabezado.png" style="width:320px;height:120px;">
+		  </center>
+		<p align="right">
+            <a href="index.html"><img src="imagenes/volver.png"
+            style="width:50px;height:50px;"></a>          
+      	</p>
+
+				<h2> Contacto - Formulario</h2>
+				<form name="contacto" method="post">
+					<fieldset>
+						<legend>Datos</legend>
+						<br>
+						<font size="3" name="empresa">Nombre Empresa: </font>
+						<input type="text" size="30" maxlength="10" value="Introduzca su empresa..." >
+						<br>
+						<br>
+						<font size="3" name="nombre">Nombre responsable: </font>
+						<input type="text" size="30" maxlength="10" value="Introduzca su nombre..." >
+						<br>
+						<br>
+						<font size="3" name="nombre">Teléfono de Contacto: </font>
+						<input type="text" size="30" maxlength="10" value="Introduzca su teléfono..." >
+						<br>
+						<br>
+						<font size="3" name="nombre">Correo electrónico: </font>
+						<input type="text" size="30" maxlength="10" value="ejemplo@ejemplo.com" >
+						<br>
+						<br>
+						<font size="3" name="lugar">Ubicación Empresa: </font>
+						<input type="text" size="30" maxlength="10" value="Ubicación de la empresa..." >
+						<br>
+						<br>
+						<br />
+						<font color="black" size="3">Tipo de Contrato: 
+						</font>
+						<br />
+						<input type="radio" name="contrato"
+						value="indefinido" checked>Indefinido
+						<br/>
+						<input type="radio" name="contrato"
+						value="temporal" checked>Temporal
+						<br/>
+						<input type="radio" name="contrato"
+						value="formacion" checked>Formación
+						<br>
+						<br>
+						<br/>
+						<font color="black" size="3">Tipo de Jornada: </font>
+						<select>
+							<option selected>Jornada Completa</option>
+							<option>Jornada Parcial</option>
+							<option>Media Jornada</option>
+						</select>
+						<font color="black" size="3">Horario: </font>
+						<select>
+							<option selected>Mañana</option>
+							<option>Tarde</option>
+							<option>Partido</option>
+							<option>Noche</option>
+						</select>
+						<br>
+						<br>
+						<font color="black" size="3">Vacante Libre: </font>
+						<br>
+						<br />
+						<input type="checkbox" name="administracion"> Administración
+						<input type="checkbox" name="escayola"> Sección Escayola
+						<input type="checkbox" name="impresion"> Sección Impresión
+						<input type="checkbox" name="cam"> Sección de CAM
+						<input type="checkbox" name="resina"> Sección de Resina
+						<input type="checkbox" name="diseño"> Sección Diseño CAD
+						<input type="checkbox" name="ceramica"> Cerámica
+					</fieldset>
+					<br>
+					<br>
+				<h2>Descripción Puesto de Trabajo</h2>
+				<form name="descripcion" method="post">
+					<fieldset>
+						<legend>Descripción </legend>
+						<br>
+						<textarea id="descripcion" name="descripcion"
+						cols="200" rows="6"></textarea> 
+						<br>
+						<br>
+					</fieldset>			
+					<br>
+					<br>
+					<center>
+					<input type="submit" name="Enviar"
+					value="Enviar formulario">
+					<input type="reset" name="Limpiar"
+					value="Borrar datos del formulario">
+					</center>
+				</form>
+	</body>
+</html>
